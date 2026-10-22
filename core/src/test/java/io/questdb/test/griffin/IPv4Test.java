@@ -1158,7 +1158,7 @@ public class IPv4Test extends AbstractCairoTest {
                             je
                             1.2.3.4
                             10.0.0.1
-
+                            
                             """);
             assertQuery("SELECT arg_max(ip, d) am FROM t")
                     .noLeakCheck()

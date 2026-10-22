@@ -186,8 +186,8 @@ public class SampleByFillNullRecordCursorFactory extends AbstractSampleByFillRec
             case ColumnType.INTERVAL -> type == ColumnType.INTERVAL_TIMESTAMP_NANO
                     ? IntervalConstant.TIMESTAMP_NANO_NULL
                     : type == ColumnType.INTERVAL_TIMESTAMP_MICRO
-                    ? IntervalConstant.TIMESTAMP_MICRO_NULL
-                    : IntervalConstant.RAW_NULL;
+                      ? IntervalConstant.TIMESTAMP_MICRO_NULL
+                      : IntervalConstant.RAW_NULL;
             default -> {
                 if (ColumnType.isArray(type)) {
                     yield new NullArrayConstant(type);
